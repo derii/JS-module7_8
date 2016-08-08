@@ -1,0 +1,109 @@
+/* ================================= MAIN =====================================*/
+body {
+	background: #eee;
+}
+/* ================================= TABS =====================================*/
+.tabs {
+  margin: 30px auto;
+  padding: 15px;
+  min-width: 240px;
+  width: 70%;
+  min-height: 310px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+}
+.menu {
+  border-radius: 5px;
+  background: #29B6F6;
+  font-size: 0;
+}
+.menu-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  font-size: 24px;
+}
+.menu-item-link {
+  padding: 5px 10px 5px 10px;
+  display: block;
+  border-radius: 5px;
+  background: #FFFF00;
+  color: #333;
+}
+.menu-item-link:hover,
+.menu-item-link_active {
+  background: #E1F5FE;  
+  text-decoration: none;
+}
+.menu-item-link:focus {
+  text-decoration: none;
+  color: #795548;
+}
+.tab-content {
+  padding: 5px;
+  display: none;
+  font-size: 18px;
+}
+.tab-content_active {
+  display: block;
+}
+.tab-content-text {
+  font-size: 18px;
+}
+/* ================================= FORM with Tooltips =====================================*/
+.form-set{
+  margin: 20px auto;
+  padding: 40px;
+  min-width: 220px;
+  width: 70%;
+  background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+}
+.form-wrapper {
+  position: relative;
+  margin: 10px 10px;
+}
+.show-tooltip {
+  position: absolute;
+  top: 0px;
+  display: none;
+  padding: 3px;
+  min-width: 235px;
+  border: 1px solid #e1e1e1;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.65);
+  background-color: white;
+}
+.form-btn {
+  padding: 6px 3px;
+  background-color: #FFFF00;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #000;
+}
+.form-btn:hover,
+.form-btn:focus,
+.form-btn:active
+ {
+  background-color: #29B6F6;
+  color: #fff;
+  border: 2px solid #000;
+}
+@media screen and (max-width: 767px) {
+  .form-wrapper {
+    position: relative;
+  }
+  .show-tooltip {
+    position: absolute;
+    top: -3px;
+    left: 37%;
+    padding: 0;
+  }
+}
